@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevBoost.JWT</name>
+    </assembly>
+    <members>
+        <member name="M:DevBoost.JWT.Controllers.AccountController.Authenticate(DevBoost.JWT.Model.User)">
+             <summary>
+             Login
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "username": "username",
+                    "password": "password
+                 }
+            
+             </remarks>
+             <param name="item"></param>
+             <returns>A newly created TodoItem</returns>
+             <response code="200">Returns the newly created token</response>
+             <response code="404">If the item is null</response>             
+        </member>
+        <member name="M:DevBoost.JWT.Helper.Response.#ctor">
+            <summary>
+            Cria um novo objeto de retorno para a api
+            </summary>
+        </member>
+        <member name="M:DevBoost.JWT.Helper.Response.#ctor(System.Object)">
+            <inheritdoc />
+            <summary>
+            </summary>
+            <param name="object">Objeto que deverá ser serializado pela Api</param>
+        </member>
+        <member name="M:DevBoost.JWT.Helper.Response.AddValue(System.Object)">
+            <summary>
+            Adiciona um objeto que deverá ser serializado e retornado pela Api
+            </summary>
+            <param name="object">Objeto que deverá ser serializado pela Api</param>
+        </member>
+        <member name="M:DevBoost.JWT.Helper.Response.AddNotification(Flunt.Notifications.Notification)">
+            <summary>
+            Adiciona mensagem de retorno
+            </summary>
+            <param name="notification">Mensagem que deverá ser retornada pela Api</param>
+        </member>
+        <member name="M:DevBoost.JWT.Helper.Response.AddNotifications(System.Collections.Generic.IEnumerable{Flunt.Notifications.Notification})">
+            <summary>
+            Adiciona mensagens de retorno
+            </summary>
+            <param name="notifications">Notificações</param>
+            <param name="type">Tipo de notificação</param>
+        </member>
+    </members>
+</doc>
